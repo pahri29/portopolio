@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portofolio Profesional Pahriyanto - Pengelolaan Stok dan Keuangan Perusahaan" />
+  <title>Pahriyanto | Portofolio Modern IT</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --primary: #00bcd4;
+      --accent: #7c4dff;
+      --bg-dark: #121212;
+      --card-bg: #1e1e1e;
+      --text-light: #f0f0f0;
+    }
+
+    body {
+      background-color: var(--bg-dark);
+      color: var(--text-light);
+      font-family: 'Poppins', sans-serif;
+      transition: all 0.3s ease-in-out;
+    }
+
+    header {
+      background: url('img/bg2.jpg') center center / cover no-repeat;
+      color: white;
+      text-align: center;
+      padding: 60px 20px;
+      box-shadow: 0 4px 10px #000;
+      position: relative;
+    }
+    header::before {
+      content: "";
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+      z-index: 1;
+    }
+    header * {
+      position: relative;
+      z-index: 2;
+    }
+
+    nav {
+      background-color: #1a1a1a;
+      border-bottom: 1px solid #333;
+    }
+
+    .navbar-brand {
+      color: var(--primary) !important;
+      font-weight: 600;
+    }
+
+    .nav-link {
+      color: var(--text-light) !important;
+    }
+
+    .profile-img {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      border: 4px solid white;
+      object-fit: cover;
+      margin-bottom: 20px;
+    }
+
+    .section-title {
+      font-weight: 600;
+      font-size: 1.5rem;
+      color: var(--primary);
+      margin-top: 40px;
+      border-left: 4px solid var(--accent);
+      padding-left: 10px;
+    }
+
+    .card {
+      background-color: var(--card-bg);
+      border: none;
+      box-shadow: 0 0 10px rgba(0, 188, 212, 0.1);
+      margin-bottom: 20px;
+      color: var(--text-light);
+    }
+
+    .card p,
+    .card ul li {
+      color: var(--text-light);
+    }
+
+    .progress {
+      height: 20px;
+      background-color: #2d2d2d;
+    }
+
+    .progress-bar {
+      background-image: linear-gradient(135deg, var(--primary), var(--accent));
+      box-shadow: 0 0 5px var(--primary);
+    }
+
+    .btn-primary {
+      background-color: var(--accent);
+      border: none;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+      color: #aaa;
+      background-color: #1a1a1a;
+      border-top: 1px solid #2a2a2a;
+    }
+
+    .animated-text {
+      font-weight: 700;
+      font-size: 2.8rem;
+      background: linear-gradient(270deg, #00d2ff, #7b2ff7, #ff6ec4);
+      background-size: 400% 400%;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: gradientText 6s ease infinite;
+      display: inline-block;
+    }
+
+    .project-title {
+      font-size: 1.25rem;
+      font-weight: 600;
+      color: #00e1ff;
+      text-shadow: 1px 1px 2px #000;
+    }
+
+    @keyframes gradientText {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg">
+  <div class="container">
+    <a class="navbar-brand" href="#">Pahriyanto</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#tentang">Tentang</a></li>
+        <li class="nav-item"><a class="nav-link" href="#keahlian">Keahlian</a></li>
+        <li class="nav-item"><a class="nav-link" href="#proyek">Proyek</a></li>
+        <li class="nav-item"><a class="nav-link" href="#kontak">Kontak</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<header>
+  <img src="img/bg.jpg" alt="Foto Pahri" class="profile-img">
+  <h1 class="animated-text">Pahriyanto</h1>
+  <p>Staff Accounting & Warehouse | PT. Indonesia Nippon Seiki</p>
+</header>
+
+<main class="container">
+  <h2 class="section-title" id="tentang">Tentang Saya</h2>
+  <p>Saya memiliki pengalaman dalam pengelolaan stok asset dan keuangan di lingkungan perusahaan manufaktur. Terampil menggunakan software akuntansi dan sistem pelaporan untuk mendukung efisiensi operasional.</p>
+
+  <h2 class="section-title" id="keahlian">Keahlian</h2>
+  <ul>
+    <li>Akuntansi & Pembukuan</li>
+    <li>Microsoft Excel (Pivot Table, VLOOKUP)</li>
+    <li>Software Accurate / MYOB</li>
+    <li>Rekonsiliasi & Laporan Keuangan</li>
+    <li>Data Warehouse & Administrasi</li>
+  </ul>
+
+  <h2 class="section-title">Skill</h2>
+  <div class="mb-3"><label>Microsoft Excel</label><div class="progress"><div class="progress-bar" style="width: 90%">90%</div></div></div>
+  <div class="mb-3"><label>Akuntansi Dasar</label><div class="progress"><div class="progress-bar" style="width: 85%">85%</div></div></div>
+  <div class="mb-3"><label>Software Accurate/MYOB</label><div class="progress"><div class="progress-bar" style="width: 80%">80%</div></div></div>
+  <div class="mb-3"><label>Administrasi & Dokumentasi</label><div class="progress"><div class="progress-bar" style="width: 75%">75%</div></div></div>
+
+  <h2 class="section-title" id="proyek">Proyek</h2>
+  <div class="card p-4 mb-3">
+    <h5 class="card-title project-title">Sistem Pengelolaan Aset Perusahaan</h5>
+    <p>Proyek ini dikembangkan untuk membantu perusahaan dalam mengelola aset secara lebih efisien dan terstruktur. Sistem ini mencatat seluruh data aset seperti inventaris kantor, perangkat IT, dan barang habis pakai. Data dicatat melalui lembar Excel terintegrasi dan sistem pencatatan manual berbasis barcode sederhana.</p>
+    <ul>
+      <li>Input dan pembaruan data aset secara berkala</li>
+      <li>Pelacakan status pemakaian dan pergerakan barang</li>
+      <li>Rekap laporan bulanan berdasarkan departemen</li>
+      <li>Validasi manual dengan tim gudang dan accounting</li>
+    </ul>
+    <p>Hasil dari implementasi sistem ini adalah peningkatan akurasi pencatatan hingga 95% dan pengurangan kehilangan aset karena adanya sistem validasi dan dokumentasi yang lebih baik.</p>
+  </div>
+
+  <h2 class="section-title" id="kontak">Kontak</h2>
+  <p>Email: pahriyanto.id@email.com</p>
+  <p>Telepon: 0831-1194-3993</p>
+</main>
+
+<footer>
+  <p>&copy; 2025 Pahriyanto | Portofolio Tema Modern IT</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
